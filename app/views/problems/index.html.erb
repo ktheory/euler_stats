@@ -1,0 +1,15 @@
+<h1>Euler Problems</h1>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Solved by</th>
+  </tr>
+  <% @problems.each do |problem| %>
+    <tr>
+      <td><%= problem.id %></td>
+      <td><%= problem.title %></td>
+      <td><%= problem.solved_by %></td>
+    </tr>
+  <% end %>
+</table>
